@@ -106,8 +106,8 @@
      "engineeringLB": {
        "Type": "AWS::ElasticLoadBalancingV2::LoadBalancer",
        "Properties": {
-           "Subnets": [ {"Ref": "publicSubnet1"}, {"Ref": "publicSubnet2"}],
-	   "Name": "engineeringLB"
+         "Subnets": [ {"Ref": "publicSubnet1"}, {"Ref": "publicSubnet2"}],
+	 "Name": "engineeringLB"
        }
      },
      "Listener": {
