@@ -14,7 +14,7 @@ node('linux') {
 
     stage ("CreateInstance") {
     
-    sh "aws ec2 run-instances --image-id ami-467ca739 --count 1 --instance-type t2.micro --key-name webserver --vpc-id vpc-90a2e0eb --security-group-ids sg-814d35c8 --subnet-id subnet-908462be --region us-east-1"
+    sh "aws ec2 run-instances --image-id ami-467ca739 --count 1 --instance-type t2.micro --key-name webserver --security-group-ids sg-814d35c8 --subnet-id subnet-908462be --region us-east-1"
 
     }
 }
